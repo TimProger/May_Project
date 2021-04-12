@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Spectral SC', serif;
+            background-color: #202227;
+            height: 2500px;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            justify-content: space-between;
+            background-color: #2D313D;
+            height: 100%;
+
+        }
+        .container{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+        }
+        header{
+            width: 100%;
+            height: 129px;
+        }
+        .mainp{
+            transition: all 0.6s;
+            color: #FCF192;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            margin-left: 0;
+            font-size: 48px;
+            cursor: pointer;
+        }
+        button{
+            transition: all 0.4s;
+            align-items: center;
+            background-color: #2D313D;
+            color: #ffffff;
+            width: 280px;
+            font-size: 27px;
+            font-family: 'Spectral SC', serif;
+            border: none; outline: none; 
+            height: 100%;
+            cursor: pointer;
+        }
+        button:hover{
+            border-top: 6px solid #FCF192;
+            /* font-size: 28px; */
+            letter-spacing: 4px;
+            color: #FCF192;
+
+        }
+        .mainp:hover{
+            text-shadow: 0 0 10px #FCF192, 0 0 20px #FCF192, 0 0 30px #FCF192, 0 0 40px #FCF192, 0 0 70px #FCF192;
+        }
+        .img{
+            width: 100%;
+            height: 542px;
+            background: url('1.jpg') repeat-x;
+            z-index: 1;
+
+        }
+        .blur{
+            width: 100%;
+            height: 542px;
+            background: #000;
+            opacity: 0.33;
+            z-index: 2;
+        }
+        .text1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #ffffff;
+            font-size: 20px;
+
+            border-bottom: 3px solid #ffffff;
+            width: 100%;
+            height: 180px;
+        }  
+        .p1{
+            margin: 0;
+            margin-top: 30px;
+        }
+        fieldset{
+            position: relative;
+            transition: all 0.4s;
+            width: 805px;
+            height: 272px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+            padding: 10px;
+            gap: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        fieldset:hover{
+            /* background-color: #2e333f; */
+        }
+        .theme:hover{
+            /* background-color: #3b4357; */
+            cursor: pointer;
+        }
+        .img2{
+            width: 222px;
+            height: 205px;
+        }
+        .fields{
+            margin-top: 20px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .fs{
+            display: flex;
+            flex-direction: row;
+        }
+        legend{
+            position: absolute;
+            bottom: 11em;
+            right: 10em;
+            background-color: #202227;
+            transition: all 0.4s;
+            font-size: 25px;
+            border: 10px solid #202227;
+            border-radius: 18px;
+            /* float: inline-end */
+        }
+        .theme{
+            transition: all 0.5s;
+            margin: 0;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            width: 100px;
+            background-color: #2D313D;
+            border-radius: 50%;
+            color: #fff;
+            top: 85%;
+            left: 92%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <p class="mainp">Комиксы.Hub</p>
+            <div class="container">
+                <button class="project">Все о проекте</button>
+                <button class="helpus">Поддержка</button>
+                <button class="contact">Контакты</button>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div class="img">
+            <div class="blur">
+
+            </div>
+        </div>
+        <div class="text1">
+            <p class="p1">Здесь вы увидите много всяких комиксов и прочая вступительная информация для пользователей</p>
+            <ul>
+                <li>Самые лучшие комиксы и прочее атлывлдаовыдо мтоладыдв ыовлдпжоажы ыволад</li>
+                <li>Аоадопв аьвлдв па вопаволдп ваолповаджоплва оалдж</li>
+            </ul>
+        </div>
+    <div class="fields">
+        <div class="fields1 fs">
+            <fieldset>
+                <legend>Русские комиксы</legend>
+                <img class="img2" src="123.png" alt="Русские комиксы"></img>
+                <label for="inp2">Самые лучшие подборки отечественных комиксов, список авторов и их работ</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Русские комиксы</legend>
+                <img class="img2" src="123.png" alt="Русские комиксы"></img>
+                <label for="inp2">Самые лучшие подборки отечественных комиксов, список авторов и их работ</label>
+            </fieldset>
+        </div>
+
+        <div class="fields2 fs">
+            <fieldset>
+                <legend>Русские комиксы</legend>
+                <img class="img2" src="123.png" alt="Русские комиксы"></img>
+                <label for="inp2">Самые лучшие подборки отечественных комиксов, список авторов и их работ</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Русские комиксы</legend>
+                <img class="img2" src="123.png" alt="Русские комиксы"></img>
+                <label for="inp2">Самые лучшие подборки отечественных комиксов, список авторов и их работ</label>
+            </fieldset>
+        </div>
+    </div>
+
+    </article>
+    <div class="theme">
+        THEME
+    </div>
+    <script>
+        const fieldset = document.querySelectorAll('fieldset')
+        const legend = document.querySelectorAll('legend')
+
+        // Сделал hover для всех fieldset
+        for(let i = 0; i<legend.length; i++){
+            legend[i].addEventListener('mouseover', function(evt){
+                fieldset[i].style.backgroundColor = '#2e333f'
+                legend[i].style.backgroundColor = '#2e333f'
+                legend[i].style.borderColor = '#2e333f'
+            })
+            legend[i].addEventListener('mouseout', function(evt){
+                fieldset[i].style.backgroundColor = '#202227'
+                legend[i].style.backgroundColor = '#202227' 
+                legend[i].style.borderColor = '#202227' 
+            })
+
+        }
+        for(let i = 0; i<fieldset.length; i++){
+            fieldset[i].addEventListener('mouseover', function(evt){
+                fieldset[i].style.backgroundColor = '#2e333f'
+                legend[i].style.backgroundColor = '#2e333f'
+                legend[i].style.borderColor = '#2e333f'
+
+            
+
+            })
+            fieldset[i].addEventListener('mouseout', function(evt){
+                fieldset[i].style.backgroundColor = '#202227'
+                legend[i].style.backgroundColor = '#202227'
+                legend[i].style.borderColor = '#202227'
+
+            })
+        }
+
+        // Закончил с hover для всех fieldset
+    </script>
+</body>
+</html>
